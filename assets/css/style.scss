@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/search-found.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: "Lexend", sans-serif;
+    background-image: linear-gradient(18deg, black, blue);
+}
+
+.container {
+    margin-top: 80px;
+    border: 1px solid black;
+    width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    background-image: linear-gradient(to left, #900afd, #0b298d);
+    box-shadow: 0 0 8px whitesmoke;
+    max-height: 700px;
+    min-height: 100px;
+    overflow: auto;
+}
+
+.topo {
+    
+    &>input {
+        width: 100%;
+        padding: 10px;
+        outline: none;
+        border: 1px solid rgb(192, 191, 191);
+        border-radius: 8px;
+        background-color: transparent;
+        transition: 0.2s;
+        color: white;
+        font-family: "Lexend", sans-serif;
+
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.664);
+            /* Altera a cor do texto do placeholder */
+            font-weight: bold;
+        }
+
+        &:hover {
+            box-shadow: 0 0 8px white;
+            transform: scale(1.03);
+        }
+    }
+}
+
+#filtrarDeletar {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+
+    & #lupa {
+        position: absolute;
+        top: 9px;
+        left: 10px;
+        color: white;
+        cursor: pointer;
+        opacity: 1;
+        transition: 1s;
+        font-size: 30px;
+
+        & #lupa:hover {
+            transform: scale(1.5);
+        }
+    }
+
+    & #inputSearch {
+        width: 80%;
+        display: flex;
+
+        & .pesquisar {
+            width: 0px;
+            border: none;
+            border-bottom: 1px solid #999;
+            padding: 5px;
+            outline: none;
+            color: white;
+            font-family: "Lexend", sans-serif;
+            font-size: small;
+            background-color: transparent;
+            transition: 1s;
+            opacity: 0;
+        }
+
+        & #clearButton {
+            font-size: 30px;
+            cursor: pointer;
+            visibility: hidden;
+            opacity: 0;
+            transition: 1s;
+        }
+    }
+
+    & button {
+        border: none;
+        background-color: rgb(211, 31, 31);
+        color: white;
+        padding: 8px;
+        cursor: pointer;
+        border-radius: 2px;
+
+        &:hover {
+            box-shadow: 0 0 10px white
+        }
+    }
+}
+
+#listaDeTarefas {
+    list-style-type: none;
+
+    & .item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 7px;
+        gap: 5px;
+        background-color: antiquewhite;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        transition: 0.3s;
+        background-image: linear-gradient(to right, #e3c0ff, #4807c6);
+        box-shadow: 0 0 7px white;
+        position: relative;
+
+        & .texto {
+            font-weight: bold;
+            overflow: hidden;
+            white-space: nowrap; /* Impede a quebra de linha do texto */  
+            text-overflow: ellipsis  /* Adiciona ponto quando o texto passa do limite.... */
+        }
+
+        & .checkbox {
+            width: 15px;
+            height: 15px;
+            
+
+            &:hover {
+                box-shadow: 0 0 8px whitesmoke;
+                cursor: pointer;
+            }
+        }
+
+        & .remover {
+            cursor: pointer;
+            background-color: transparent;
+            color: white;
+            font-size: 20px;
+
+            &:hover {
+                background-color: red;
+                box-shadow: 0 0 8px rgba(255, 0, 0, 0.644);
+            }
+        }
+
+        &::after {
+            content: '';
+            content: attr(data-datetime);
+            position: absolute;
+            top: 0px;
+            right: 50px;
+            font-size: 9px;
+            color: #999;
+        }
+    }
+}
+
+.aparecer{
+    width: 100% !important;
+    opacity: 1 !important;
+}
+
+.opc {
+    opacity: 0.3 !important;
+}
+
+.marcarTexto {
+    text-decoration: line-through !important;
+}

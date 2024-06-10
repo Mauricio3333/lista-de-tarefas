@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List-To-Do</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="topo">
+                <input type="text" placeholder="Digite sua tarefa..." autofocus id="inputAddTarefa">
+                
+                <div id="filtrarDeletar">
+                    <ion-icon name="search-outline" id="lupa"></ion-icon>
+                    
+                    <div id="inputSearch">
+                        <input type="text" name="pesquisarTarefa" class="pesquisar" placeholder="Pesquisa tarefas" required>
+                        <span class="clear-button" id="clearButton">&times;</span>
+                    </div>
+                    
+                    <button onclick="deletarTudo()">Deletar Tudo</button>
+                </div>
+                
+            </div>
+            <ul id="listaDeTarefas"></ul>
+        </div>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
