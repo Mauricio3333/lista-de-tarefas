@@ -1,3 +1,4 @@
+![Logo do projeto](https://imgur.com/a/lista-de-tarefas-mauricio-rocha-yPzdPui)
 # Lista de Tarefas
 
 A Lista de Tarefas é uma aplicação simples que permite ao usuário adicionar, visualizar, marcar como concluída, excluir e pesquisar tarefas. É uma ferramenta útil para organizar tarefas diárias, projetos pessoais ou qualquer outra lista de atividades que precise ser gerenciada.
