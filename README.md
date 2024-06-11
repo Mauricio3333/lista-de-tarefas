@@ -1,4 +1,7 @@
 ![Logo do projeto](https://github.com/Mauricio3333/lista-de-tarefas/blob/main/assets/Logo%20do%20projeto.PNG)
+<div align="center">
+    <a href="https://lista-de-tarefas-rho-liard.vercel.app/" target="_blank">Visualizar o projeto</a>
+</div>
 # Lista de Tarefas
 
 A Lista de Tarefas é uma aplicação simples que permite ao usuário adicionar, visualizar, marcar como concluída, excluir e pesquisar tarefas. É uma ferramenta útil para organizar tarefas diárias, projetos pessoais ou qualquer outra lista de atividades que precise ser gerenciada.
