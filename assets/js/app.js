@@ -51,7 +51,8 @@ const criarElementos = ({ texto, realizado, dataHora }) => {
 };
 
 // Função para adicionar tarefa
-const adicionarTarefa = () => {
+const adicionarTarefa = (e) => {
+    e.preventDefault()
     const tarefaTexto = inputAddTarefa.value.trim();
     if (!tarefaTexto) {
         alert("Tarefa vazia, adicione algo!");
@@ -155,7 +156,7 @@ const capitalizeFirstLetter = (texto) => {
 
 // Eventos
 inputAddTarefa.addEventListener("keydown", (e) => {
-    if (e.key === 'Enter') adicionarTarefa();
+    if (e.key === 'Enter') adicionarTarefa(e);
 });
 
 lupa.addEventListener("click", mostrarCampoPesquisa);

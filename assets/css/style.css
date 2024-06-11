@@ -28,7 +28,7 @@ body {
   overflow: auto;
 }
 
-.topo > input {
+.topo form input {
   width: 100%;
   padding: 10px;
   outline: none;
@@ -39,22 +39,22 @@ body {
   color: white;
   font-family: "Lexend", sans-serif;
 }
-.topo > input::-moz-placeholder {
+.topo form input::-moz-placeholder {
   color: rgba(255, 255, 255, 0.664);
   /* Altera a cor do texto do placeholder */
   font-weight: bold;
 }
-.topo > input:-ms-input-placeholder {
+.topo form input:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.664);
   /* Altera a cor do texto do placeholder */
   font-weight: bold;
 }
-.topo > input::placeholder {
+.topo form input::placeholder {
   color: rgba(255, 255, 255, 0.664);
   /* Altera a cor do texto do placeholder */
   font-weight: bold;
 }
-.topo > input:hover {
+.topo form input:hover {
   box-shadow: 0 0 8px white;
   transform: scale(1.03);
 }
